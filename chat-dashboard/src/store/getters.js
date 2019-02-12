@@ -1,0 +1,28 @@
+const getters = {
+    sidebar: state => state.app.sidebar,
+    size: state => state.app.size,
+    device: state => state.app.device,
+    visitedViews: state => state.tagsView.visitedViews,
+    cachedViews: state => state.tagsView.cachedViews,
+	permission_routers: state => state.permission.routers,
+	addRouters: state => state.permission.addRouters,
+    roles: state => state.user.roles,
+    username: state => state.user.name,
+    perfil: state => state.user.perfil,
+    token: state => state.user.token,
+    chatActivo: state => state.chat.activo,
+    chatToken: state => state.chat.token,
+    lstMsg: state => state.chat.lstMsg,
+    chatDesconect: state => state.chat.desconect,
+    titleAvailable: state => state.chat.titleAvailable,
+    clientList: state => state.client.list,
+    notifyClients: state => state.client.notifyClients,
+    clientId: state => state.client.clientId,
+    dataClient: state => state.client.dataClient,
+    listClient: state => state.client.list,
+    listChats: state => state.client.listChats,
+    agentsList: state => state.agents.agentsList,
+    notifyAgents: state => state.agents.notifyAgents,
+    countAgents:  state => state.agents.countAgents
+  }
+  export default getters
